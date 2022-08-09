@@ -1,5 +1,4 @@
 ﻿using FlowardApp.Services.CatalogService.Dtos;
-using FlowardApp.Services.CatalogService.Models;
 using FlowardApp.Shared.Dtos;
 using System.Collections.Generic;
 using System.Threading.Tasks;

@@ -11,6 +11,7 @@ namespace FlowardApp.Services.CatalogService.Services
 {
     public class ProductRepository : IProductRepository
     {
+        #region Definitions
         private readonly IMongoCollection<Product> _productCollection;
         private readonly IMapper _mapper;
 
@@ -21,6 +22,7 @@ namespace FlowardApp.Services.CatalogService.Services
             _productCollection = database.GetCollection<Product>(databaseSettings.ProductCollectionName);
             _mapper = mapper;
         }
+        #endregion
 
         public async Task<Response<List<ProductDto>>> GetAllAsync()
         {

@@ -12,15 +12,18 @@ namespace FlowardApp.Services.CatalogService.Tests
 {
     public class ProductsControllerTests
     {
+        #region Definitions
         private readonly Mock<IProductRepository> _mockRepo;
         private readonly ProductsController _controller;
         private readonly IMapper _mapper;
 
-        public ProductsControllerTests()
+        public ProductsControllerTests(IMapper mapper)
         {
             _mockRepo = new Mock<IProductRepository>();
             _controller = new ProductsController(_mockRepo.Object);
+            _mapper = mapper;
         }
+        #endregion
 
         [Fact]
         public void GetAll_ActionExecutes_ReturnsAllProducts()

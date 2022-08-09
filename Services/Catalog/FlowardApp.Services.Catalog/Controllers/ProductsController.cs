@@ -3,7 +3,6 @@ using FlowardApp.Services.CatalogService.Services;
 using FlowardApp.Shared.ControllerBases;
 using FlowardApp.Shared.Messages;
 using MassTransit;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -13,6 +12,7 @@ namespace FlowardApp.Services.CatalogService.Controllers
     [ApiController]
     public class ProductsController : CustomControllerBase
     {
+        #region Definitions
         private readonly IProductRepository _productRepository;
         private readonly ISendEndpointProvider _sendEndpointProvider;
 
@@ -26,7 +26,12 @@ namespace FlowardApp.Services.CatalogService.Controllers
             _productRepository = productRepository;
             _sendEndpointProvider = sendEndpointProvider;
         }
+        #endregion
 
+        /// <summary>
+        /// Gets All Products
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -34,6 +39,11 @@ namespace FlowardApp.Services.CatalogService.Controllers
             return CreateActionResultInstance(response);
         }
 
+        /// <summary>
+        /// Gets A Product By Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id)
         {
@@ -41,6 +51,11 @@ namespace FlowardApp.Services.CatalogService.Controllers
             return CreateActionResultInstance(response);
         }
 
+        /// <summary>
+        /// Creates A New Product
+        /// </summary>
+        /// <param name="productCreateDto"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Create(ProductCreateDto productCreateDto)
         {
@@ -60,6 +75,11 @@ namespace FlowardApp.Services.CatalogService.Controllers
             return CreateActionResultInstance(response);
         }
 
+        /// <summary>
+        /// Updates A Product
+        /// </summary>
+        /// <param name="productUpdateDto"></param>
+        /// <returns></returns>
         [HttpPut]
         public async Task<IActionResult> Update(ProductUpdateDto productUpdateDto)
         {
@@ -67,6 +87,11 @@ namespace FlowardApp.Services.CatalogService.Controllers
             return CreateActionResultInstance(response);
         }
 
+        /// <summary>
+        /// Deletes A Product
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
