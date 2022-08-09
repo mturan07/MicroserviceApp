@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{EF92BAB9-E978-428C-95AE-CFB78013C8D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{DD59C886-E83C-479D-8F8D-5519E1221CE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlowardApp.Services.CatalogService", "Services\Catalog\FlowardApp.Services.Catalog\FlowardApp.Services.CatalogService.csproj", "{0DE2C9AA-25F0-4B54-8E5D-87B05ABE72C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{A6AE20A5-4E44-471B-9236-54A7C6EAEF9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlowardApp.Shared", "Shared\FlowardApp.Shared\FlowardApp.Shared.csproj", "{40666E32-105A-420C-92EC-F274E8CF8619}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Email", "Email", "{025848D4-0EBA-431E-A168-52511E9B6C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowardApp.Services.EmailService", "Services\Email\FlowardApp.Services.Email\FlowardApp.Services.EmailService.csproj", "{1AC17523-1D55-49D6-97F0-B3D851176165}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{6A0F7DE3-0A8A-420B-98B2-7556580CC75B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Floward.Gateway", "Floward.Gateway\Floward.Gateway.csproj", "{696DD90A-255F-49CB-9EE3-82BC4AD4FEB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{8D92FD2D-A45C-4B52-A8F6-357B402C565D}"
+	ProjectSection(SolutionItems) = preProject
+		Ports.txt = Ports.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowardApp.Services.CatalogService.Tests", "FlowardApp.Services.CatalogServiceTest\FlowardApp.Services.CatalogService.Tests.csproj", "{591DF960-D724-4E43-964A-C265CF3711FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DE2C9AA-25F0-4B54-8E5D-87B05ABE72C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE2C9AA-25F0-4B54-8E5D-87B05ABE72C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE2C9AA-25F0-4B54-8E5D-87B05ABE72C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE2C9AA-25F0-4B54-8E5D-87B05ABE72C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40666E32-105A-420C-92EC-F274E8CF8619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40666E32-105A-420C-92EC-F274E8CF8619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40666E32-105A-420C-92EC-F274E8CF8619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40666E32-105A-420C-92EC-F274E8CF8619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC17523-1D55-49D6-97F0-B3D851176165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC17523-1D55-49D6-97F0-B3D851176165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC17523-1D55-49D6-97F0-B3D851176165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC17523-1D55-49D6-97F0-B3D851176165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696DD90A-255F-49CB-9EE3-82BC4AD4FEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696DD90A-255F-49CB-9EE3-82BC4AD4FEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696DD90A-255F-49CB-9EE3-82BC4AD4FEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696DD90A-255F-49CB-9EE3-82BC4AD4FEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{591DF960-D724-4E43-964A-C265CF3711FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591DF960-D724-4E43-964A-C265CF3711FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591DF960-D724-4E43-964A-C265CF3711FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591DF960-D724-4E43-964A-C265CF3711FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD59C886-E83C-479D-8F8D-5519E1221CE0} = {EF92BAB9-E978-428C-95AE-CFB78013C8D6}
+		{0DE2C9AA-25F0-4B54-8E5D-87B05ABE72C0} = {DD59C886-E83C-479D-8F8D-5519E1221CE0}
+		{40666E32-105A-420C-92EC-F274E8CF8619} = {A6AE20A5-4E44-471B-9236-54A7C6EAEF9C}
+		{025848D4-0EBA-431E-A168-52511E9B6C4E} = {EF92BAB9-E978-428C-95AE-CFB78013C8D6}
+		{1AC17523-1D55-49D6-97F0-B3D851176165} = {025848D4-0EBA-431E-A168-52511E9B6C4E}
+		{696DD90A-255F-49CB-9EE3-82BC4AD4FEB8} = {6A0F7DE3-0A8A-420B-98B2-7556580CC75B}
+		{591DF960-D724-4E43-964A-C265CF3711FC} = {DD59C886-E83C-479D-8F8D-5519E1221CE0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FE6FC2B-DE28-4476-AF93-21630F5227AB}
+	EndGlobalSection
+EndGlobal
